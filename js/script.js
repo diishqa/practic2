@@ -101,11 +101,6 @@ function openModal(index) {
     };
     modal.style.display = 'block';
 }
-if (closeBtn) {
-    closeBtn.onclick = function() {
-        modal.style.display = 'none';
-    };
-}
 window.onclick = function(event) {
     if (modal && event.target === modal) {
         modal.style.display = 'none';
