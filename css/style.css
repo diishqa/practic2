@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 header {
-    background: #2d5be3;
+    background: #6d8ef1c7;
     color: #fff;
     padding: 20px 30px;
     display: flex;
@@ -88,7 +88,7 @@ main {
     margin: 10px 0 0;
 }
 .btn {
-    background: #2d5be3;
+    background: #6d8ef1c7;
     color: #fff;
     padding: 12px 25px;
     text-decoration: none;
@@ -100,7 +100,7 @@ main {
     margin-top: 10px;
 }
 .btn:hover {
-    background: #1a4ac7;
+    background: #6d8ef1c7;
 }
 input, select, textarea {
     width: 100%;
@@ -181,7 +181,7 @@ textarea {
     cursor: pointer;
 }
 .close:hover {
-    color: #2d5be3;
+    color: #6d8ef1c7;
 }
 .success-message {
     color: #28a745;
@@ -197,7 +197,7 @@ textarea {
     padding: 25px 30px;
     border-radius: 8px;
     margin: 30px 0;
-    border-left: 4px solid #2d5be3;
+    border-left: 4px solid #6d8ef1c7;
 }
 .organization-block h3 {
     margin-top: 0;
