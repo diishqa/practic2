@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Кружок</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,22 +17,24 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1>Городской каталог кружков и секций</h1>
-            <p>Найди занятие по душе в одном месте!</p>
-            <a class="btn" href="catalog.html">Перейти в каталог</a>
-        </section>
-
-        <section class="categories-section">
-            <h2>Категории занятий</h2>
-            <div class="cards">
-                <div class="card"><h3>Спорт</h3></div>
-                <div class="card"><h3>Программирование</h3></div>
-                <div class="card"><h3>Музыка</h3></div>
-                <div class="card"><h3>Иностранные языки</h3></div>
-                <div class="card"><h3>Творчество</h3></div>
+        <div class="container">
+            <h1 id="activity-title">Школа программирования</h1>
+            <div class="activity-details">
+                <p><strong>Категория:</strong> <span id="activity-cat">Программирование</span></p>
+                <p><strong>Возраст:</strong> <span id="activity-age">12–17 лет</span></p>
+                <p><strong>Стоимость:</strong> <span id="activity-price">Бесплатно</span></p>
+                <p><strong>Расписание:</strong> <span id="activity-schedule">Вт, Чт 15:00–17:00</span></p>
+                <p><strong>Описание:</strong> <span id="activity-desc">Изучаем Python и создаем игры</span></p>
             </div>
-        </section>
+            <div class="organization-block">
+                <h3>Об организации</h3>
+                <p><strong>Название:</strong> IT Kids</p>
+                <p><strong>О нас:</strong> Центр дополнительного образования для детей и подростков. Опытные преподаватели, современные методики.</p>
+                <p><strong>Контакты:</strong> +7 (999) 123-45-67, info@itkids.ru</p>
+            </div>
+            <button id="signup-btn-activity" class="btn">Записаться</button>
+            <p id="modal-message-activity" class="success-message"></p>
+        </div>
     </main>
     <footer>
         <div class="footer-content">
@@ -58,5 +60,6 @@
             <p>ВолжскийАктив  2026.</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

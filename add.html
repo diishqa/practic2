@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Добавить кружок</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,22 +17,21 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1>Городской каталог кружков и секций</h1>
-            <p>Найди занятие по душе в одном месте!</p>
-            <a class="btn" href="catalog.html">Перейти в каталог</a>
-        </section>
-
-        <section class="categories-section">
-            <h2>Категории занятий</h2>
-            <div class="cards">
-                <div class="card"><h3>Спорт</h3></div>
-                <div class="card"><h3>Программирование</h3></div>
-                <div class="card"><h3>Музыка</h3></div>
-                <div class="card"><h3>Иностранные языки</h3></div>
-                <div class="card"><h3>Творчество</h3></div>
-            </div>
-        </section>
+        <div class="container">
+            <h1>Добавить кружок</h1>
+            <p>Заполните форму, чтобы добавить информацию о вашем кружке или секции.</p>
+            <form onsubmit="document.getElementById('add-message').innerHTML = 'Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.'; return false;">
+                <input placeholder="Название кружка" required>
+                <textarea placeholder="Описание кружка" required></textarea>
+                <input placeholder="Возрастная группа (например: 7–10 лет)" required>
+                <input placeholder="Стоимость (например: Бесплатно или 500 руб./мес.)" required>
+                <input placeholder="Расписание (например: Пн, Ср, Пт 10:00–12:00)" required>
+                <input placeholder="Название организации" required>
+                <input placeholder="Контактный телефон" required>
+                <button class="btn">Отправить заявку</button>
+            </form>
+            <div id="add-message" class="success-message"></div>
+        </div>
     </main>
     <footer>
         <div class="footer-content">
