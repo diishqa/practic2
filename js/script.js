@@ -78,7 +78,6 @@ function render() {
     });
 }
 const modal = document.getElementById('modal');
-const closeBtn = document.querySelector('.close');
 function openModal(index) {
     if (!modal) return;
     const item = data[index];
@@ -100,11 +99,6 @@ function openModal(index) {
         document.getElementById('modal-message').textContent = 'Заявка на запись успешно отправлена!';
     };
     modal.style.display = 'block';
-}
-if (closeBtn) {
-    closeBtn.onclick = function() {
-        modal.style.display = 'none';
-    };
 }
 window.onclick = function(event) {
     if (modal && event.target === modal) {
