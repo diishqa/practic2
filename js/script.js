@@ -101,16 +101,16 @@ function openModal(index) {
     };
     modal.style.display = 'block';
 }
+if (closeBtn) {
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+    };
+}
 window.onclick = function(event) {
     if (modal && event.target === modal) {
         modal.style.display = 'none';
     }
 };
-if (document.getElementById('signup-btn-activity')) {
-    document.getElementById('signup-btn-activity').onclick = function() {
-        document.getElementById('modal-message-activity').textContent = 'Заявка на запись успешно отправлена!';
-    };
-}
 if (s) s.oninput = render;
 if (c) c.onchange = render;
 if (render) render();

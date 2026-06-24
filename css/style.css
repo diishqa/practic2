@@ -100,7 +100,7 @@ main {
     margin-top: 10px;
 }
 .btn:hover {
-    background: #6d8ef1c7;
+    background: #5a7ad6;
 }
 input, select, textarea {
     width: 100%;
@@ -238,14 +238,6 @@ textarea {
 }
 .author-info p {
     margin: 10px 0;
-}
-.activity-details p {
-    margin: 14px 0;
-    font-size: 16px;
-    line-height: 1.8;
-}
-#signup-btn-activity {
-    margin-top: 20px;
 }
 footer {
     background: #222;
